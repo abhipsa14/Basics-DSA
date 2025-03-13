@@ -1,0 +1,10 @@
+Basics of Array:
+--->Data Structures
+--->Contains one particular type of data.
+--->contain anykind of data type.
+--->|  |  |  |  |  |-->consider this as an array that can conatin 5 elements.
+--->garbage values are stored inside the array if initialized in main function. but zero if declared globally.
+--->maximum size can be 10^6 in main function
+---> in global section it can be 10^7
+--->In order to access any elements in array we use indexing.
+--->it goes from 0 to size-1
