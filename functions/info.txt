@@ -1,0 +1,23 @@
+A function is a block of instructions which only execute when it is called.
+
+returtype function-name (parameters if any){
+    bunch of instructions
+
+    return value(optional)
+}
+
+
+------>
+Function call
+ to call a function, write the function's name followed by two parentheses() and a semicolon ';'
+ can be called more than once, as many times you want, performs same logic.
+ you can pass data, known as parameters, into a function.
+
+---> Parameters: they act as variables inside the function. you can add as many parameters as you want, just separate them with a comma. 
+
+A C++ function consists of two parts:
+1. Declaration - the function's name, return type, and parameters(if any)
+2. Definition - the body of the function (code to be executed)
+
+function must be declared before it is called.
+--->Forward declaration

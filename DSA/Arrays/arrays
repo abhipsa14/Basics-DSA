@@ -1,10 +1,65 @@
 Basics of Array:
 --->Data Structures
 --->Contains one particular type of data.
---->contain anykind of data type.
---->|  |  |  |  |  |-->consider this as an array that can conatin 5 elements.
+--->contain anykind of data type(be it string, integer, float,etc.)
+--->stores in contiguous locations.
+-->consider this as an array that can conatin 5 elements.
 --->garbage values are stored inside the array if initialized in main function. but zero if declared globally.
 --->maximum size can be 10^6 in main function
 ---> in global section it can be 10^7
---->In order to access any elements in array we use indexing.
---->it goes from 0 to size-1
+--->In order to access any elements in array we use indexing|--->it goes from 0 to size-1
+-----
+Type of arrays:
+1. Single dimensional arrays
+---> stores elements linearly in contiguous memory locations.
+---> single dimension is used to store elements inside this array.
+---> wriiten as array_name[].
+2. Multi dimensional arrays
+---> arrays having more than one dimensions.
+---> most relevant arrays are 2D and 3D arrays.
+---> gives us a tabular representation by stroing elements in the form of rows and columns.
+for example, 2d array will have 2 dimensions, A[2][3]--> contains 2 rows and 3 columns.
+3d will add depth in the 2d array.
+---> Elements of the array are stored in contiguous memory locations. For example : 200 is the starting address (base address) assigned to the first element of the array and each element of the array is of integer data type occupying 4 bytes in memory. 
+![alt text](image.png)
+
+-->Where can arrays be used? 
+
+● Arrays should be used where the number of elements to be stored is already known. 
+
+● Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched. 
+
+● Generally, when we require high-speed access times, we usually prefer arrays since they provide O(1) access times. 
+
+● Arrays work well when we have to organize data in a multidimensional format. We can declare arrays of as many dimensions as we want. 
+
+● If the element's index to be modified is known beforehand, it can be efficiently modified using arrays due to quick access time and mutability. 
+
+Disadvantages:
+*  you cannot dynamically alter their sizes. It creates a problem when the number of elements the array will store is not known beforehand. 
+*  Insertion and Deletion in arrays are difficult and costly since the elements are stored in contiguous memory locations, hence, we need to shift the elements to create/delete space for elements. 
+* If more memory is allocated than required, it leads to the wastage of memory space and less allocation of memory also leads to a problem. 
+
+-Accessing of elements take O(1)time.
+-Inserting takes O(1) for last element, O(n-i)time for randomly inserting the elements and O(n) for inserting at the first position of array.
+-Finding takes O(N) in worst case.
+-deleting, at the end takes o(1), at random position takes o(n-i) and at start take,o(n) time.
+
+The process of visiting or accessing each element of an array, one by one, is called a *Traversal in an Array*. 
+Counting array elements, printing array values, changing current values, and adding all element values.
+-Search Algorithms: Linear, Binary, Hash Table(Dictionary)
+-Inserting:   
+{
+for(i = size; i > pos; i--)
+        arr[i] = arr[i-1];
+       //Insert element at the given position
+ arr[pos] = element;
+}
+-deleting:
+{
+   for(i = index; i < size - 1; i++)
+           arr[i] = arr[i+1];
+       printf("New Array : ");
+       for(i = 0; i < size - 1; i++)
+           printf("%d ",arr[i]);
+} 

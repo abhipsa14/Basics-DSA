@@ -1,0 +1,7 @@
+Function overloading
+-> It is a langauge feature.
+-> create multiple functions with the same name.
+-> it must have: 1. different datatypes of parameters
+                 2.different no of parameters.
+-> example:fun(int), fun(char), fun(int, int)
+-> compiler maps out the functions.
