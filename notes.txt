@@ -1,0 +1,1 @@
+for sorting the string in descending order: sort(A.begin(),A.end(),greater<int>()); or sort(A.rbegin(),A.rend())
